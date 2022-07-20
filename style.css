@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins",
+    sans-serif;
+  ;
+}
+
+#main-head {
+  background-image: url(bg-hero-desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+  overflow: hidden;
+}
+
+#main-head .second .log {
+  padding-bottom: 10rem;
+}
+
+.firstsection {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 7.5rem;
+}
+
+.firstsection button {
+  background-color: white;
+  padding: 0.5rem 2.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  border: thin solid rgb(231, 222, 222);
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 0 4px #ccc;
+}
+
+.firstsection a {
+  color: hsl(192, 100%, 9%);
+}
+
+.secondsection {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+}
+
+.secondsection .main-item {
+  padding: 0 2.5rem;
+}
+
+.secondsection img {
+  width: 500px;
+}
+
+.secondsection h1 {
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+}
+
+.secondsection p {
+  margin-bottom: 1rem;
+  line-height: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.secondsection button {
+  background-color: hsl(322, 100%, 66%);
+  padding: 0.7rem 3rem;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 4px hsl(322, 93%, 38%);
+}
+
+/* style for the first main */
+#main-cont {
+  padding: 7.5rem;
+}
+
+#main-cont .main-cont {
+  display: flex;
+  align-items: center;
+  border: thin solid #ccc;
+  border: 0;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 5px #ccc
+}
+
+#main-cont .main-cont .main-itms {
+  padding: 2.5rem 2.5rem 2.5rem 5rem;
+}
+
+#main-cont .main-cont .main-cont-2 img {
+  width: 100%;
+  overflow: hidden;
+}
+
+#last-section .last-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: thin solid #ccc;
+  border-radius: 0.6rem;
+  width: 700px;
+  margin: 0 auto;
+  padding: 3rem;
+  margin-top: 7.5rem;
+  margin-bottom: -185px;
+  background-color: #ffffff;
+  z-index: 1;
+  position: absolute;
+  top: -40%;
+  left: 30%;
+  border: 0;
+  color: hsl(192, 100%, 9%);
+  box-shadow: 0 0 5px #ccc;
+}
+
+#last-section .last-section button {
+  background-color: hsl(322, 100%, 66%);
+  padding: 0.7rem 3rem;
+  margin-top: 1.5rem;
+  color: white;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 4px hsl(322, 90%, 38%);
+}
+
+#foot {
+  padding: 10rem 7.5rem 3rem;
+  background-color: hsl(192, 100%, 9%);
+  color: #ccc;
+  font-family: "Open Sans", sans-serif;
+  z-index: -1;
+  position: relative;
+}
+
+.img-huddle {
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.footer-1 {
+  width: 35%;
+  margin-right: 7.5rem;
+}
+
+.icon-cont {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.icon-cont img {
+  margin-right: 1.5rem;
+}
+
+.footer-2,
+.footer-3 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer-2 a,
+ul,
+li,
+.footer-3 a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  line-height: 2rem;
+}
+
+.copy {
+  text-align: right;
+}
+
+
+@media screen and (max-width: 768px) {
+  #main-head {
+    background-image: url(bg-hero-mobile.svg);
+  }
+
+  .firstsection {
+    padding: 5rem;
+  }
+
+  .secondsection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+  }
+
+  .secondsection .main-item {
+    padding: 0 3.5rem;
+    text-align: center;
+  }
+
+  .secondsection p {
+    margin-bottom: 2.5rem;
+  }
+
+  .secondsection button {
+    padding: 0.7rem 5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  /* style for the first main */
+  #main-cont {
+    padding: 7.5rem 7.5rem 15rem;
+  }
+
+  #main-cont .main-cont {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #last-section .last-section {
+    width: 500px;
+    top: -30%;
+    left: 15%;
+  }
+
+  #last-section .last-section button {
+    padding: 0.7rem 5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-1 {
+    width: 100%;
+  }
+
+  .footer-2,
+  .footer-3 {
+    width: 100%;
+  }
+
+  .footer-2 a,
+  ul,
+  li,
+  .footer-3 a,
+  ul,
+  li {
+    line-height: 2.5rem;
+  }
+
+  .footer-4 img {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .copy {
+    text-align: center;
+  }
+}
